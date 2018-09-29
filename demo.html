@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo Player</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/audiocontrols.css"/>
+        <link rel="stylesheet" href="css/playlist.css"/>
+        <script src="js/jquery/jquery.min.js"></script>
+    </head>
+    <body>
+        <audio id="audioId" preload="none" controls>
+            <source src="audio/Ed%20Sheeran%20-%20Im%20a%20Mess%20(OFFICIAL%20AUDIO).mp3">
+        </audio>
+        <canvas id="canvasId"></canvas>
+        
+        <script>
+            var audioId = document.getElementById('audioId');
+            
+            var audioContext = new AudioContext();
+            var src = audioContext.createMediaElementSource(audioId);
+            var analyzer = audioContext.createAnalyser();
+            
+            src.connect(analyzer);
+            analyzer.connect(audioContext.destination);
+            
+            var canvasId = document.getElementById('canvasId');
+            var canvasContext = canvasId.getContext('2d');
+            
+                canvasId.width = window.innerWidth;
+                canvasId.height = window.innerHeight;
+            
+            var dataArray = new Uint8Array(analyzer.frequencyBinCount);
+            
+            var barWidth = analyzer.frequencyBinCount*0.3;
+            var barHeight;
+            var widthDistance;
+            
+            setInterval(function(){
+                widthDistance = 0;    
+                
+                analyzer.getByteFrequencyData(dataArray);
+                
+                console.log(barWidth);
+                
+                for (var i = 0; i< analyzer.frequencyBinCount; i++) {
+                    barHeight = dataArray[i];
+        
+                    //set Colors... rgb
+                    var r = barHeight + (25 * (i/analyser.frequencyBinCount));
+                    var g = 250 * (i/analyser.frequencyBinCount);
+                    var b = 50;
+                    // set canvas gradient....
+                    var gradient = canvasContext.createRadialGradient(0, 0, 0, 0, 50, 100);
+                    // vertical gradient arrangements...
+                    gradient.addColorStop(1, "rgb(" + Math.floor(r) + "," + Math.floor(g) + "," + Math.floor(b) + ")"); 
+                    gradient.addColorStop(0, "rgb(0, 0, 0)");
+                    
+                    canvasContext.fillStyle = gradient;
+                    canvasContext.fillRect(widthDistance, canvasAPI.height - barHeight * .55, barWidth, barHeight);
+
+                    widthDistance += barWidth + 2;
+                }
+            }, 1000);
+            
+        </script>
+        
+    </body>
+</html>

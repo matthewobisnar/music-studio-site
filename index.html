@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Music Studio</title>
+        <meta charset="utf-8">
+        <meta http-equiv="Access-Control-Allow-Origin" content="*">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <script src="js/jquery/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/audiocontrols.css"/>
+        <script src="js/boostrap/bootstrap.min.js"></script>
+    </head>
+    <body id="bg-index">
+        <div class="headerWrapper">
+            <div class="tophead nav-border">
+                <div class="container">
+                    <div class="row">
+                         <div class="col-md-6 contactHead">
+                            <span class="glyphicon glyphicon-earphone"> 9090-9390-09</span>
+                            <span class="glyphicon glyphicon-envelope"> matthewobisnar@gmail.com</span>
+                         </div>
+                        <div class="col-md-6 contactHead">
+                            <div class="pull-right">
+                                <span class="glyphicon glyphicon-earphone"> Facebook</span>
+                                <span class="glyphicon glyphicon-envelope"> Instagram</span>
+                                <span class="glyphicon glyphicon-envelope"> Twitter</span>
+                                <span class="glyphicon glyphicon-envelope"> Dribble</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-custom">
+                <div class="container">
+                    <div class="row">
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                            <i class="glyphicon glyphicon-align-justify"></i>
+                          </button>
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="index.html"><span style="color: #cb356b;">Music</span> Studio</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <ul class="nav navbar-nav pull-right">
+                                <li><a href="login.html"><b>My Account</b></a></li>
+                                <li><a href="index.html"><b>Home</b></a></li>
+                                <li><a href="aboutus.html"><b>About us</b></a></li>
+                                <li><a href="#"><b>Privacy</b></a></li>
+                                <li><a href="#"><b>Policy</b></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="mainContent">
+                <div class="container">
+                    <div class="contents">
+                        <div class="row text-center smooth-transition">
+                            <h1 class="h1-custom">
+                                <b>New Music Today</b>
+                            </h1>
+                            <h3>Listen To The Best Online Music Playlists</h3><br/><br/>
+                            <a href="login.html"><button type="button" class="btn btn-default btn-lg btn-default-custom">Get Started</button></a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="audioCanvas">
+                    <div class="container">
+                        <div class="row">
+                            <canvas id="audioAPIVisualizer"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="player player-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="audioPlayer">
+                                <audio id="audioSource" preload="none">
+                                    If this Message appears to your screen, It means this media doesn't support your browser..
+                                </audio>
+                                <div class="controls">
+                                    <a class="backward">
+                                        <span class="glyphicon glyphicon-backward"></span>
+                                    </a>
+                                    <a class="playPause">
+                                        <span class="glyphicon glyphicon-play"></span>
+                                    </a>
+                                    <a class="forward">
+                                        <span class="glyphicon glyphicon-forward"></span>
+                                    </a>
+                                    <span class="currentTime">00:00</span>
+                                    
+                                    <div class="timeLine">
+                                        <div class="playHead"></div>
+                                    </div>
+                                    
+                                    <span class="playDuration">00:00</span>
+                                    
+                                    <a class="stopBtn">
+                                        <span class="glyphicon glyphicon-stop"></span>
+                                    </a>
+                                    
+                                    <a class="audioControl">
+                                        <span class="mutedVol glyphicon glyphicon-volume-up"></span>
+                                        <div class="audoLine">
+                                            <div class="Volume"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sectionWrapper">
+            <div class="container b-custom text-center">
+               <div class="row">
+                   <div class="static-title playlist-title">
+                       <p><span class="clr">PLAYLIST</span> HIGHTLIGHTS</p>
+                        <h2>FEATURED PLAYLIST</h2>
+                   </div>
+               </div> 
+            </div>
+            <div class="playlist stick">
+                <div class="container text-centered music-playlist">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="login.html">
+                                    <div class="img-content">
+                                        <img src="img/bulletformyvalentineband2017threepiece_638.jpg" class="img-style">
+                                    </div>
+                                </a>
+                                <div class="caption">
+                                    <p class="featured-title"><b>FOREVER AND ALWAYS</b></p>
+                                    <p><i class="glyphicon glyphicon-headphones clr pull-right"></i>Bullet For My Valentine</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="login.html">
+                                    <div class="img-content">
+                                        <img src="img/urbandub_002_by_hanseon-d5llyzw.jpg" class="img-style">
+                                    </div>
+                                </a>
+                                <div class="caption">
+                                    <p class="featured-title"><b>SOUL SEARCHING</b></p>
+                                    <p><i class="glyphicon glyphicon-headphones pull-right"></i> Urbandub</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="login.html">
+                                    <div class="img-content">
+                                        <img src="img/BULLETFORMYVALENTINE_031016_4104.jpg" class="img-style">
+                                    </div>
+                                </a>
+                                <div class="caption">
+                                    <p class="featured-title"><b>THE LAST FIGHT</b></p>
+                                    <p><i class="glyphicon glyphicon-headphones pull-right"></i> Bullet For My Valentine</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="login.html">
+                                    <div class="img-content">
+                                        <img src="img/pexels-photo-243988.jpeg" class="img-style">
+                                    </div>
+                                </a>
+                                <div class="caption">
+                                    <p class="featured-title"><b>Not Good Enough</b></p>
+                                    <p><i class="glyphicon glyphicon-headphones pull-right"></i> Escape The Fate</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--ALBUM-->
+        <div class="albumWrapper">
+            <div class="container b-custom text-center">
+               <div class="row">
+                   <div class="static-title  album-title">
+                       <p><span class="clr">ALBUM</span> HIGHTLIGHTS</p>
+                        <h2>FEATURED ALBUM</h2>
+                   </div>
+               </div>
+            </div>
+            <div class="album stick">
+                <div class="container albumList">
+                    <div class="row">
+                          <div class="col-md-4">
+                            <div class="thumbnail">
+                               <div class="img-content">
+                                    <a href="login.html">
+                                        <img src="img/homepage2-slider-01.jpg" alt="Lights" class="img-style" style="width:100%">
+                                    </a>
+                                </div>
+                                <div class="caption">
+                                    <h4><b>Thumbnail label</b></h4>
+                                    <p class="text-justify">Lorem ipsum dolorsit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+                                    <p><a href="login.html" class="btn btn-default btn-radius" role="button">See More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                              <div class="img-content">
+                                    <a href="login.html">
+                                        <img src="img/homepage2-slider-01.jpg" alt="Lights" class="img-style" style="width:100%">
+                                    </a>
+                                </div>
+                                <div class="caption">
+                                    <h4><b>Thumbnail label</b></h4>
+                                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+                                    <p><a href="login.html" class="btn btn-default btn-radius" class="img-style" role="button">See More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <div class="img-content">
+                                    <a href="login.html">
+                                        <img src="img/homepage2-slider-01.jpg" alt="Lights" class="img-style" style="width:100%">
+                                    </a>
+                                </div>
+                                <div class="caption">
+                                    <h4><b>Thumbnail label</b></h4>
+                                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+                                   <p><a href="login.html" class="btn btn-default btn-radius" role="button">See More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="aboutus stick1">
+                <div class="container text-center">
+                   <div class="row">
+                       <div class="static-title about-title" style="color: white">
+                           <p><span class="clr">LITTLE KNOW</span> ABOUT US</p>
+                            <h2>LITTLE KNOW ABOUT US</h2>
+                       </div>
+                   </div> 
+                </div>
+                <div class="container aboutContent">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12 text-justify clrWhite about-content">
+                            <h3 class="text-uppercase">About us</h3>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. 
+                            Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences.</p><br/>
+                            <h4><a href="#" style="color: white">More About us</a></h4>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 about-content">
+                            <div class="img-content">
+                                <img src="img/slide-page.jpg" alt="" style="width:100%;" class="img-style img-responsive">
+                            </div>
+                        </div>             
+                    </div>
+                </div>
+            </div>
+        <div class="contactus">
+            <div class="container">
+                <div class="row">
+                    <div class="container b-custom text-center">
+                       <div class="row">
+                           <div class="static-title contact-us-title">
+                               <p><span class="clr">SEND US</span> FEEDBACK</p>
+                                <h2>CONTACT US</h2>
+                           </div>
+                       </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footerMenu">
+                <div class="container">
+                    <div class="row">
+                        <form method="post">
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group name-inputs">
+                                            <input type="text" placeholder="Full name" name="contactname" class="form-control"  required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group email-inputs">
+                                            <input type="email" placeholder="Email" name="contactemail" class="form-control" required>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </fieldset>
+                            <div class="form-group">
+                                <div class="textarea-inputs">
+                                     <textarea class="form-control" height="500" placeholder="Message"  required></textarea>
+                                </div>
+                            </div>
+                             <div class="form-group">
+                                 <button type="submit" class="btn bnt-default btn-submit">SUBMIT</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="privacyPolicy">
+                <div class="container">
+                    <div class="row">
+                            <p>Music Studio © 2017 | Site Privacy policy | Advertise | Featured Song license.<span class="pull-right">Designed by Matthew Bisnar</span></p>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:" class="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+        </footer>
+        <script src="js/index.js"></script>
+        </div>
+    </body>
+</html>

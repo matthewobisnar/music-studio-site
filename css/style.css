@@ -1,0 +1,454 @@
+/* Author: Matt.. */
+
+/* LOGIN STYLES */
+#bg-index {
+    display: none;
+}
+
+#bg-gradient {
+    z-index: -100;
+    background: url(../img/blur_homedefault-bg1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+
+.loginWrapper {
+    opacity: 0;
+}
+
+.login {
+    max-width: 320px;
+    margin: 7% auto;
+    background: #55555512;
+    z-index: 1000;
+    -webkit-box-shadow: 0px 0px 1px 0px #0000008c;
+    -moz-box-shadow: 0px 0px 1px 0px #0000008c;
+    -o-box-shadow: 0px 0px 1px 0px #0000008c;
+    box-shadow: 0px 0px 1px 0px #0000008c;
+    position: relative;
+    display: none;
+    background: #E91E63;
+}
+
+.sectionWrapper {
+    background: #e6e6e661;
+    background: url(../img/slide-page.png);
+    background-position: cover;
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+form {
+    padding: 25px 20px 0px 20px;
+}
+
+.header-card {
+    text-align: center;
+    width: auto;
+    padding: 25px 0px 0px 0px;
+    color: white;
+}
+
+.img-custom {
+    width: 45%;
+    padding: 30px 20px 50px 20px;
+}
+
+.forgot-password {
+    padding: 20px 0px 20px 0px;
+}
+
+.input-group-addon {
+    border: 0px !important;
+    background-color: #fff !important;
+}
+
+.form-control {
+    border: 0px !important;
+}
+
+.sign-custom {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.sign-custom a {
+   text-decoration: none;
+   color: white;
+}
+
+
+.head-footer {
+    width: auto;
+    background: #1c483621;
+    padding: 25px 0px 0px 0px;
+}
+
+#remember {
+    color: white;
+}
+
+/* LOADER JS */
+
+.loaders {
+    width: 120px;
+    height: 120px;
+    border: dotted 5px #cccccc03;
+    border-top: solid 5px white;
+    border-bottom: solid 5px white;
+    margin: 17% auto;
+    border-radius: 50%;
+    text-align: center;
+    animation: spin 2s linear infinite;
+    opacity: 1;
+
+}
+
+.input-group-addon {
+    border: 0px !impportant;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+
+    50% { transform: rotate(180deg);} 
+    100% { transform: rotate(360deg);} 
+}
+
+/* End loader */
+
+.smooth-transition, .smooth-transition > h1 {
+    display:  none;
+}
+
+/* Sign up */
+
+.signup {
+    position: relative;
+    margin: 7% auto;
+    max-width: 700px;
+    background: #55555512;
+    z-index: 1000;
+    -webkit-box-shadow: 0px 0px 1px 0px #0000008c;
+    -moz-box-shadow: 0px 0px 1px 0px #0000008c;
+    -o-box-shadow: 0px 0px 1px 0px #0000008c;
+    box-shadow: 0px 0px 1px 0px #0000008c;
+    display: none;
+    background: #E91E63;
+}
+
+#agree {
+    color: white;
+}
+
+.lbl-cl {
+    color: white;
+}
+
+.sign-up-footer {
+    margin-top: 55px;
+}
+
+/* Social Media Icons*/
+
+
+/* Index.html */
+
+.headerWrapper {
+  width: 100%;
+  background: url(../img/blur_pexels-photo-243988.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1000;
+  background-attachment: fixed;
+}
+
+.contents {
+    color:aliceblue;
+    min-height: 350px;
+}
+
+.static-title {
+    padding: 67px 0px 65px 0px;
+    z-index: 100;
+}
+
+.featured-title {
+    color: #c6333f; 
+    border-bottom: solid 1px #efefef;
+    padding-bottom: 5px
+}
+
+.playlist-title , .music-playlist , .albumList, .album-title, .about-title, .about-content , .contact-us-title, .footerMenu {
+    opacity: 0;
+}
+
+.static-title h2 {
+    margin-top: 0px;
+}
+
+.h1-custom {
+    font-size: 60px;
+    margin-top: 90px;
+}
+.playlist-cation {
+    min-height: 100px;
+}
+
+.btn-default-custom {
+    color: #fff;
+    background: -webkit-linear-gradient(left, #BD3F32 , #CB356B);
+    background: linear-gradient(left, #BD3F32 , #CB356B);
+    background: -moz-linear-gradient(left, #BD3F32 , #CB356B);
+    border-radius: 0px;
+}
+
+.btn-default-custom:hover {
+    color: #fff;
+    background: #CB356B;
+}
+
+.contactHead span:not(:first-child) {
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.tophead {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    color: #fff;
+    font-weight:600;
+    opacity: 0.8;
+    z-index: 1000;
+}
+
+.navbar-custom a {
+    color: #fff;
+    z-index: 1000;
+}
+
+.nav-border {
+    border-bottom: 1px #ffffff52 solid;
+}
+
+.navbar-custom > li a:hover {
+    background: none !important;
+}
+
+.clr { color: #BD3F32 }
+.clrWhite { color: white}
+
+.b-custom {
+    border-bottom: #ccccccd1 solid 1px;
+}
+
+/* hover Effects */
+
+
+.ripple {
+    background-color: rgba(255, 255, 255, 0.7);
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+}
+
+.stick {
+    margin: 50px 20px 50px 20px;
+}
+
+.stick1 {
+    margin: 50px 0px 0px 0px;
+}
+
+.album {
+    padding-bottom: 40px;
+}
+
+.aboutContent {
+    padding-top: 10px 0px 10 0px;
+}
+
+.btn-radius{
+    border-radius: 0px;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+.playlist {
+    padding: 15px 0px 60px 0px;
+}
+
+.aboutus {
+  padding-bottom: 130px;
+  width: 100%;
+  background: url(../img/header-bg-album-detail.png);
+  background-position: center center;
+  background-size: cover;;
+  background-repeat: no-repeat;
+  z-index: -1000;
+  background-attachment: fixed;
+  background-color: #091b27;
+}
+
+.footerMenu {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: white;
+}
+
+.name-inputs, .textarea-inputs, .email-inputs {
+    border-radius: 0px !important;
+    border: solid 1px silver;
+    margin: 15px 0px 20px 0px;
+}
+
+.textarea-inputs > textarea {
+    min-height: 120px;
+}
+.privacyPolicy {
+    padding:  20px 0px 0px 0px;
+    border-bottom: solid #000 1px;
+    background: #1b1a1a;
+    color: #ccc;
+}
+
+.navbar-toggle {
+    background: #ccc0;
+    color: white;
+    font-size: 18px;
+}
+
+/* Hover  Button Effects */
+
+.return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+.return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+/* Contact Succes */
+
+#contactSuccess, #slidedown{
+    margin: 10px 0px;
+    padding:15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    text-align:center;
+}
+
+#contactSuccess{
+    color: #D63301;
+    background-color: #ffeb3b;
+}
+#slidedown{
+    background-color: #ffeb3b;
+    color: #00529B;
+    display: none;
+}
+
+/*============ ABOUT US PAGE =========*/
+
+.about-headWrapper {
+    min-height: 250px;
+    background: url(../img/blur.png);
+    background-position: cover;
+    z-index: -1000;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+.SectionWrapper {
+    min-height: 900px;
+}
+
+.content {
+    margin-top: 60px;
+}
+
+.about-thumbnail img {
+    width: 97%;
+}
+
+.about-thumbnail > .caption, .person-position {
+    text-align: center;
+}
+
+.person-position {
+    border-top: solid #ccc 1px;
+    border-bottom: solid #ccc 1px;
+    font-weight: 600;
+    color: #009688;
+}
+
+.about-thumbnail > .caption p {
+    margin-top: 10px;
+}
+
+.about-thumbnail > .caption h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.about-us {
+    padding: 50px 0px 5px 0px;
+}
+.img-content {
+    overflow: hidden;
+    min-width: 100px;
+}
+
+.img-style {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+    width: 100%;
+
+}
+
+.img-style:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}

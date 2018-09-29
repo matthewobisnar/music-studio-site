@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tests Audio</title>
+        <style>
+            #audioVisualizer {
+                border: solid 1px black;
+            }
+        </style>
+    </head>
+    <body>
+        <audio  id="AudioAPI" controls preload="none">
+            <source src="audio/Bullet%20For%20My%20Valentine%20-%20Forever%20And%20Always.mp3"/>
+        </audio>
+        <canvas id="audioVisualizer"></canvas>
+    </body>
+    <script>
+        
+        // ========= Creating Audio Canvas Visualizer =============
+        var audioVisualizer = document.getElementById('audioVisualizer');
+        var ctx = audioVisualizer.getContext('2d');
+            audioVisualizer.width = window.innerWidth;
+            audioVisualizer.height = window.innerHeight;
+        // ========= End Creating Audio Canvas Visualizer  ========
+        
+        // =============== Audio API ===================
+        
+        var audioAPI = document.getElementById('AudioAPI');
+        var audioContext = new AudioContext();
+        var src = audioContext.createMediaElementSource(audioAPI);
+        var analyser = audioContext.createAnalyser();
+        
+        // =============== End Audio API ===============
+        
+        src.connect(analyser);
+        analyser.connect(audioContext.destination);
+        
+         analyser.fftSize = 256;
+        var dataBuffer = new Uint8Array(analyser.frequencyBinCount);
+    
+        var barWidth = (ctx.width/analyser.frequencyBinCount)* 0.9;
+        var barHeight;
+        var DistanceOfBuffer = 0;
+        
+        // Render buffer..
+        setInterval(function () {
+            
+            analyser.getByteFrequencyData(dataBuffer);
+            DistanceOfBuffer = 0;
+            
+            // Clear Canvas per Buffer Draw....
+            ctx.clearRect(0,0,ctx.width, ctx.height);
+            
+            for (var i = 0; i<analyser.frequencyBinCount; i++) {
+                 barHeight = dataBuffer[i];
+                
+                var r = barHeight + (25 * (i/analyser.frequencyBinCount));
+                var g = 250 * (i/analyser.frequencyBinCount);
+                var b = 50;
+                    
+                   ctx.fillStyle = "rgb(" + Math.floor(r) + "," + Math.floor(g) + "," + Math.floor(b) + ")";
+                   ctx.fillRect(DistanceOfBuffer, ctx.height - barHeight * .25 , barWidth, barHeight);
+                   console.log("rgb(" + Math.floor(r) + "," + Math.floor(g) + "," + Math.floor(b) + ")");
+                    
+                    DistanceOfBuffer += barWidth + 1;
+            }
+
+        }, 1000);
+        
+    </script>
+</html>

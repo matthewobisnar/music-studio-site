@@ -1,0 +1,167 @@
+body, html {
+  height: 100%;
+}
+
+.navtop {
+    opacity: 0;
+}
+
+.navbar-default {
+    background-color: #f7f7f7;
+}
+
+.navtop .navbar-brand {
+    padding: 20px 15px !important;
+    line-height: none !important;
+    cursor: pointer !important;
+}
+
+.profile-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.playlist-page {
+     
+}
+
+.icon {
+    line-height: 2;
+}
+
+.navbar-top {
+    float: right;
+    color: #333;
+}
+
+.profileImage {
+    background: url(../img/blur.png);
+    background-position: cover;
+    height: 360px;
+    background-repeat: no-repeat;
+}
+
+.social-media {
+    min-height: 55px;
+    width: 100%;
+    border-bottom: #eee 1px solid;
+}
+
+.sidebar {
+    width: 19%;
+    background: #f3f3f3;
+    min-height: 750px;
+    align-content: stretch;
+    display: flex;
+    float:left;
+    border-right: 1px solid #eee;
+}
+
+.sidebarFooter {
+    width: 19%;
+    background: #eee;
+    min-height: 55px;
+    align-content: stretch;
+    display: flex;
+    float:left;
+    border-right: 1px solid #eee;
+}
+
+.div-content {
+    float: none; 
+}
+
+.sidebarCategory {
+    width: 100%;
+    padding: 0px 7px 0px 7px;
+    z-index: 100;
+}
+
+.sidebarCategory h5 {
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #cb356b;
+    width: 100%;
+    border-bottom: solid 1px #e8e8e8;
+}
+
+.liCategory li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.liCategory li a {
+    padding: 7px 0px 7px 15px;
+    display: block;
+    text-decoration: none;
+    color: #666;
+}
+
+.liCategory li a:hover {
+    width: 100%;
+    color: #fff;
+    background: #eee;
+}
+
+.audioplayer {
+    height: 50px;
+    background: #ccc;
+    
+}
+
+.table-playlist thead th {
+    padding: 18px;
+    width: 5%;
+    color: #cb356b;
+    border-bottom: solid 1px #ececec;
+    border-right: solid 1px #ececec;
+    background: #f7f7f7;
+}
+
+.table-playlist tbody tr:nth-child(even) {
+    background: #f7f7f7;
+}
+
+.table-playlist tbody tr td {
+    cursor: pointer;
+    padding: 18px;
+    width: 5%;
+    border-bottom: solid 1px #ececec;
+}
+
+.table-playlist tbody tr td:hover {
+    color:#ccc;
+    z-index: 100;
+}
+
+.activeHover {
+    color: #cb356b;
+}
+
+.footer {
+    border-top: solid 1px #ececec;
+    border-bottom: solid 1px #ececec;
+    padding: 17px 15px 17px 15px;
+}
+
+@media screen and (max-width:750px) {
+    .navbar-top {
+        float: none;
+        margin: 5px;
+        text-align: center;
+    }
+    
+    .sidebar {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .playlist-content {
+        width: 100%;
+        float: none !important;
+        padding-right: 0px !important;
+    }
+}

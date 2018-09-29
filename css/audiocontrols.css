@@ -1,0 +1,101 @@
+.controls {
+    display: inline;
+    
+}
+
+.backward, .forward, .playPause, .audioControl, .stopBtn {
+    text-decoration: none;
+    color: aliceblue;
+    z-index: 1000;
+}
+
+.player {
+    background: #0000009c;
+    padding: 15px 0px 15px 0px;
+    box-shadow: 0px 1px 0px 0px black;
+    z-index: 1000;
+    position: relative;
+    bottom: 0;
+}
+
+.player-bottom {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.audioCanvas {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 53px;
+    text-align: center;
+}
+
+.timeLine {
+    width: 73%;
+    height: 5px;
+    background: #ccc;
+    display: inline-block;
+    margin: 5px;
+}
+
+.audoLine {
+    width: 5%;
+    height: 5px;
+    background: #ccc;
+    display: inline-block;
+    margin: 5px;
+}
+
+.Volume {
+    height: 5px;
+    background: -webkit-linear-gradient(left, #BD3F32 , #CB356B);
+    background: -moz-linear-gradient(left, #BD3F32 , #CB356B);
+    background: -o-linear-gradient(left, #BD3F32 , #CB356B);
+    background: linear-gradient(left, #BD3F32 , #CB356B);
+}
+
+.playDuration, .currentTime {
+    position: relative;
+    top: -2px;
+    color: aliceblue;
+    margin-left: 2px;
+}
+
+.forward > span, .playPause > span , .backward > span, .audioControl > span, .stopBtn > span {
+    font-size: 20px;
+    color: #CB356B;
+}
+
+.forward > span:hover, .playPause > span:hover , .backward > span:hover, .audioControl > span:hover, .currentTime:hover, .playDuration:hover {
+    color: #BD3F32;
+}
+
+.playHead {
+    height: 5px;
+    background: -webkit-linear-gradient(left, #BD3F32 , #CB356B);
+    background: -moz-linear-gradient(left, #BD3F32 , #CB356B);
+    background: -o-linear-gradient(left, #BD3F32 , #CB356B);
+    background: linear-gradient(left, #BD3F32 , #CB356B);
+}
+
+.audioControl span {
+    font-size: 23px;
+    position: relative;
+    top: 4px;
+    display: inline-block;
+}
+
+.white {
+    color: aliceblue !important;
+}
+
+@media screen and (max-width: 1171px) {
+    .timeLine {
+        width: 60%;
+    }
+}
