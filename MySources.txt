@@ -22,7 +22,4 @@ Framework and Tools :
 
 => Music and other mp3 audio sources are downloaded from youtube.
 
-This project will be posted in Github..
-My Github : https://github.com/matthewobisnar
-
 => Thank you!
