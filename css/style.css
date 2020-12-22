@@ -34,8 +34,8 @@
 
 .sectionWrapper {
     background: #e6e6e661;
-    background: url(../img/slide-page.png);
-    background-position: cover;
+    /* background: url(../img/slide-page.png); */
+    /* background-position: cover; */
     width: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -109,7 +109,7 @@ form {
 }
 
 .input-group-addon {
-    border: 0px !impportant;
+    border: 0px !important;
 }
 
 @keyframes spin {
