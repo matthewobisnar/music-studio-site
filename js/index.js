@@ -1,7 +1,6 @@
 /* 
    Javascript , Jquery Functionality
    Fullpage Interaction..
-   Written by Matthew Bisnar And Jayvil Legaspi Rosaupan.
 */
 
 $(window).on('load', function() {
