@@ -1,6 +1,5 @@
 /* 
     This codes are just desame in index.js 
-    Written by Matthew Bisnar And Jayvil Legaspi Rosaupan.
 */
 
 $(document).ready(function () {
