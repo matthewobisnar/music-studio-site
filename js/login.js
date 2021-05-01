@@ -1,6 +1,5 @@
 /* 
     javascript , jquery Functionality ..
-    Written by Matthew Bisnar And Jayvil Legaspi Rosaupan.
 */
 
 $(document).ready(function() {
